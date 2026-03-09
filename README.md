@@ -7,6 +7,8 @@
 
 **AIOps 360** es una plataforma de monitorización sintética proactiva. En lugar de esperar a que los sistemas fallen (monitorización reactiva), esta plataforma orquesta "usuarios digitales" (Agentes IA) que validan continuamente la experiencia de usuario, las APIs y la infraestructura, reportando hallazgos con contexto enriquecido y trazabilidad financiera (FinOps).
 
+![AIOps 360 Arquitectura Detallada](arch.jpg)
+
 ## 🎯 El Problema vs. La Solución
 
 * **El Problema (Reactivo):** La monitorización tradicional basada en métricas de CPU/RAM genera silos y falsos positivos. Saber que la base de datos está lenta no garantiza que el usuario pueda hacer login. El equipo técnico a menudo se entera de las caídas críticas cuando el cliente se queja.
