@@ -34,7 +34,7 @@ El proyecto sigue una arquitectura **Hexagonal (Puertos y Adaptadores)** y un di
 
 Para garantizar el desacoplamiento, todos los servicios comparten un **Shared Kernel** con las siguientes entidades core (implementadas en Pydantic):
 
-* `Intention`: Representa **qué** se quiere lograr. (Ej: *"Revisa si el login de Liferay funciona"*).
+* `Intention`: Representa **qué** se quiere lograr. (Ej: *"Revisa si el login funciona"*).
 * `Action`: Representa el **cómo** atómico. Una intención puede generar múltiples acciones. (Ej: *"Abre Chromium en url X"*, *"Haz click en botón Y"*).
 * `Outcome`: El resultado inmutable de una Acción. (Ej: *"Éxito: Tiempo de carga 1.2s"* o *"Fallo: Timeout 503"*).
 * `BillingMetadata`: Objeto de valor que traza el coste exacto en tokens y dólares de cada interacción con LLMs (FinOps).
@@ -50,7 +50,7 @@ La "carretera" de la plataforma funciona con los siguientes eventos clave:
 
 ## 🚀 Casos de Uso del Piloto (MVP)
 
-1. **Agente Web (Liferay):** Monitorización sintética de la UI simulando navegación humana.
+1. **Agente Web:** Monitorización sintética de la UI simulando navegación humana.
 2. **Agente API (Middleware):** Validación de latencias y códigos de estado en el clúster.
 3. **Agente Infraestructura (K8s):** Chequeo de salud de nodos y Pods.
 4. **Agente SRE Assistant (RAG/MCP):** Asistente conversacional capaz de cruzar incidencias actuales con documentación técnica y tickets de JIRA.
